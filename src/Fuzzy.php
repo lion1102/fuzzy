@@ -1,5 +1,5 @@
 <?php
-namespace lion\fuzzy\src;
+namespace Fuzzy;
 
 use Fuse\Fuse;
 
