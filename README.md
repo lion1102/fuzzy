@@ -58,7 +58,7 @@ $arrSearchData = [
     ],    
 ];
 
-$results = getCompareString( $arrValidateData, $arrSearchData, ['keys' => [], 'caseSensitive' => 'false', 'includeScore' => 'true',], 'id', 'name' );
+$results = getCompareString( $arrValidateData, $arrSearchData, ['keys' => ['name'], 'caseSensitive' => 'false', 'includeScore' => 'true',], 'id', 'name' );
 
 /*
 
