@@ -2,13 +2,13 @@
     "name": "lion1102/fuzzy",
     "type": "library",
     "require": {
-		"php" : "^7.0",
+		"php" : ">=7.0",
         "loilo/fuse": "^3.1"
     },
     "minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
-			"Fuzzy": "src/"
+			"Fuzzy\\": "src/"
 		}
 	}
 }
