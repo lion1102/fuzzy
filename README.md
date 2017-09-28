@@ -5,7 +5,7 @@ This library requires [Fuse](https://github.com/Loilo/Fuse).
 ## Install
 
 ```bash
-composer install lion1102/fuzzy
+composer require lion1102/fuzzy
 ```
 
 ## Usage
