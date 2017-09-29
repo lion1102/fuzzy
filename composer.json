@@ -4,8 +4,7 @@
     "require": {
 		"php" : ">=7.0",
         "loilo/fuse": "^3.1"
-    },
-    "minimum-stability": "dev",
+    },   
 	"autoload": {
 		"psr-4": {
 			"Fuzzy\\": "src/"
