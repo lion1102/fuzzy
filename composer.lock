@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "aa19262ae8edb16732d0116d1c1be42d",
+    "packages": [
+        {
+            "name": "loilo/fuse",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Loilo/Fuse.git",
+                "reference": "44b8b3f66918f86fbbbda668fc9412a582c50810"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Loilo/Fuse/zipball/44b8b3f66918f86fbbbda668fc9412a582c50810",
+                "reference": "44b8b3f66918f86fbbbda668fc9412a582c50810",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fuse\\": "src/"
+                },
+                "files": [
+                    "src/Bitap/matched_indices.php",
+                    "src/Bitap/pattern_alphabet.php",
+                    "src/Bitap/regex_search.php",
+                    "src/Bitap/score.php",
+                    "src/Bitap/search.php",
+                    "src/Helpers/deep_value.php",
+                    "src/Helpers/is_list.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Reuschel",
+                    "email": "florian@loilo.de"
+                }
+            ],
+            "description": "Fuzzy search for PHP based on Bitap algorithm",
+            "time": "2017-09-04T09:10:51+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0"
+    },
+    "platform-dev": []
+}
