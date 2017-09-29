@@ -16,9 +16,8 @@ class Fuzzy
      * @return array
      */
     function getCompareString($arrValidate = [], $arrPattern = [], $arrOptions = [], $key1, $key2) {
-        $arrSearchConditons = array_merge([], $options);
-        
-        $fuse = new Fuse($arrPattern,$arrSearchConditons);
+            
+        $fuse = new Fuse($arrPattern,$arrOptions);
         
         $arrResult = [];
         foreach($arrValidate as $data ) {
