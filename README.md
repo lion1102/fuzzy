@@ -64,7 +64,7 @@ $arrSearchData = [
 
 $arrOptions = ['keys' => ['name'], 'caseSensitive' => 'false', 'includeScore' => 'true',];
 
-getCompareString( $arrValidateData, $arrSearchData, arrOptions, 'id', 'name' );
+getCompareString( $arrValidateData, $arrSearchData, $arrOptions, 'id', 'name' );
 
 /*
 
