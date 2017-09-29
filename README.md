@@ -422,9 +422,10 @@ The following methods are available on a `Fuzzy\Fuzzy` instance:
 @param {string} $key1, $key2 The specificed key in validation array
 @return {array} A list of all search matches.
 */
+```
 
 List all matching pattern and scope for all the items between arrays.
-```
+
 ## Options
 
 **keys** (*type*: `array`)
