@@ -407,7 +407,7 @@ Array
         )
 
 )*/
-
+```
 ## Methods
 
 The following methods are available on a `Fuzzy\Fuzzy` instance:
