@@ -12,6 +12,10 @@ composer require lion1102/fuzzy
 
 ```php
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Fuzzy\Fuzzy;
+
 $arrValidateData = [
     [
         'id' => 'A1',
@@ -58,7 +62,9 @@ $arrSearchData = [
     ],    
 ];
 
-$results = getCompareString( $arrValidateData, $arrSearchData, ['keys' => ['name'], 'caseSensitive' => 'false', 'includeScore' => 'true',], 'id', 'name' );
+$arrOptions = ['keys' => ['name'], 'caseSensitive' => 'false', 'includeScore' => 'true',];
+
+getCompareString( $arrValidateData, $arrSearchData, arrOptions, 'id', 'name' );
 
 /*
 
@@ -401,6 +407,23 @@ Array
         )
 
 )*/
+
+## Methods
+
+The following methods are available on a `Fuzzy\Fuzzy` instance:
+
+**`getCompareString( $arrValidateData, $arrSearchData, arrOptions, $key1, $key2 );`**
+
+```php
+/*
+@param {array} $arrValidateData The validation associative array to fuzzy search on.
+@param {array} $arrSearchData The pattern associative string to fuzzy search on.
+@param {array} arrOptions The search conditions array.
+@param {string} $key1, $key2 The specificed key in validation array
+@return {array} A list of all search matches.
+*/
+
+List all matching pattern and scope for all the items between arrays.
 ```
 ## Options
 
@@ -537,38 +560,6 @@ When `true`, the matching function will continue to the end of a search pattern 
 **minMatchCharLength** (*type*: `int`, *default*: `1`)
 
 When set to include matches, only those whose length exceeds this value will be returned. (For instance, if you want to ignore single character index returns, set to `2`)
-
-
-## Methods
-
-The following methods are available on a `Fuse\Fuse` instance:
-
----
-
-**`search($pattern)`**
-
-```php
-/*
-@param {string} $pattern The pattern string to fuzzy search on.
-@return {array} A list of all search matches.
-*/
-```
-
-Searches for all the items whose keys (fuzzy) match the pattern.
-
----
-
-**`setCollection($list)`**
-
-```php
-/*
-@param {array}  $list The new data to use
-@return {array}       The provided $list
-*/
-```
-
-Sets a new list of data for Fuse to match against.
-
 
 ## Weighted Search
 
